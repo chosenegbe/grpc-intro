@@ -26,4 +26,7 @@ public class AccountDatabase {
     public static int deductBalance(int accountId, int amount) {
         return MAP.computeIfPresent(accountId, (k,v) -> v - amount);
     }
+    public static void printAccountDetails (){
+        System.out.println(MAP);
+    }
 }
